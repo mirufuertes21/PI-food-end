@@ -1,0 +1,9 @@
+.home{
+    background-color: #f2deba;
+    background-size: cover;
+   
+        justify-content: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        height: 400vh;
+    }

@@ -1,0 +1,35 @@
+
+.navbar {
+   margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color:  rgb(14, 94, 111);
+  border-bottom: 1px solid #e0e0e0; 
+  
+}
+
+ .navbar__left {
+  display: flex;
+  align-items: center;
+}
+
+
+.navBar__search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: rgb(252, 239, 183);
+} 
+
+ .navbar__link:hover {
+  color: rgba(174, 211, 128, 0.822);
+}
+
