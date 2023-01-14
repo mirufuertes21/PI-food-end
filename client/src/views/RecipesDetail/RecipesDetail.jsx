@@ -26,7 +26,7 @@ export default function RecipesDetail(props) {
 
       <div className={style.recipeDetail}>
    
-        <div className="recipeDetail__img">
+      <div className="recipeDetail__img">
           {recipe.image ? (
             <img className="img" src={recipe.image} alt={recipe.name} />
           ) : null}

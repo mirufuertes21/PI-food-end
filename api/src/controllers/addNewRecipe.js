@@ -1,7 +1,7 @@
 const {Recipe, Diet} = require('../db.js');
 
 
-const addNewRecipe = async (name, summary, healthScore, steps, createdInDB, diets,image) => {
+const addNewRecipe = async (name, summary, healthScore, steps, createdInDB, diets) => {
     try{
         const newRecipe = await Recipe.create({
         name,
@@ -9,7 +9,7 @@ const addNewRecipe = async (name, summary, healthScore, steps, createdInDB, diet
         healthScore,
         steps,
         createdInDB,
-        image,
+        
         });
     
         if(diets){  

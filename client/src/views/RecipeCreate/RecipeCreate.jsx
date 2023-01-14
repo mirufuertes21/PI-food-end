@@ -5,10 +5,8 @@ import {useHistory } from 'react-router-dom';
 import {createRecipes} from '../../redux/actions';
 import {getDiets, getAllRecipes} from '../../redux/actions/index.js';
 import style from'./RecipeCreate.module.css';
-import create from '../../assets/img/create-recipe.jpg';
 import {Link} from 'react-router-dom';
-import { all } from 'axios';
-import photoDefault from '../../assets/img/photoDefault.jpg'
+
 
 export default function RecipeCreate() {
     const dispatch = useDispatch();
@@ -58,7 +56,7 @@ export default function RecipeCreate() {
         diets: [],
         summary: '',
         steps: '',
-        image:''
+        
        
       
     });
@@ -69,7 +67,7 @@ export default function RecipeCreate() {
         diets: [],
         summary: '',
         steps: '',
-        //image:''
+    
     });
     
     useEffect(() => {
@@ -103,7 +101,7 @@ export default function RecipeCreate() {
                 diets: [],
                 summary: '',
                 steps: '',
-                image: '',
+                
             });
         history.push('/home');
         } 
@@ -112,11 +110,7 @@ export default function RecipeCreate() {
     return (
         <div className={style.container}>
  
-           {/* <div className='img__container'> 
-                <img src={create} alt='create' className='img__create'/>
-            </div> */}
- 
-           
+  
            
             <form onSubmit={handleSubmit}>
                 <div className={style.form__group}>
@@ -155,9 +149,12 @@ export default function RecipeCreate() {
                 {errors.steps && <p className={style.form__error}>{errors.steps}</p>}
                 <br/>
 
-                <label className={style.imageInput}>Image</label>
-                <textarea className='imagetext' type='text'name="image" value={input.image} onChange={handleChange} placeholder='Image URL...' />
- 
+                {/* <label className={style.imageInput}>Image</label>
+                {/* <textarea className='imagetext' type='text'name="image" value={input.image} onChange={handleChange} placeholder='Image URL...' /> */}
+                {/* <Image ></Image>  */} 
+               
+               {/* <img src={photoDefault}  width={130} height={200} name="image" value={input.image} onChange={handleChange} ></img> */}
+                {/* <img src={photoDefault} alt='hola' width={150} height={200}></img> */}
 
                 <label className=""> </label>
                 <button className='form__button' type="submit" >Create</button> 
